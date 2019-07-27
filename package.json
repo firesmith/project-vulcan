@@ -1,0 +1,44 @@
+{
+  "name": "project-vulcan",
+  "version": "0.0.0",
+  "description": "WIP: a new way to collaborate",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "ackushiw <ackw.kushi@gmail.com>"
+    }
+  ],
+  "main": "lib/module.js",
+  "repository": "firesmith/project-vulcan",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue example lib test",
+    "test": "yarn lint && jest",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
+    "get-port": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt": "latest",
+    "request": "latest",
+    "request-promise-native": "latest",
+    "standard-version": "latest"
+  }
+}
